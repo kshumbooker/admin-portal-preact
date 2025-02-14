@@ -7,6 +7,7 @@ import { Footer } from './components/Footer';
 import { Input } from './components/Input';
 import { Alert } from './components/Alert';
 import { Heading } from './components/Heading';
+import { Paragraph } from './components/Paragraph';
  
 register(Header, 'bkr-header', ['src']);
 register(Input, 'bkr-input', ['label', 'id', 'name', 'type', 'for', 'dataVal', 'maxlength', 'dataValLength', 'dataValLengthMax']);
@@ -14,3 +15,4 @@ register(Button, 'bkr-button', ['type', 'text']);
 register(Alert, 'bkr-alert', ['type', 'msg']); 
 register(Footer, 'bkr-footer', ['cd']);
 register(Heading, 'bkr-heading', ['text']);
+register(Paragraph, 'bkr-paragraph', ['text']);

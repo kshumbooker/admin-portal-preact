@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Booker</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+        
+        <script src="../dist/bundle.js"></script>
+        <link href="./dist/output.css" rel="stylesheet">    
+
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.booker.co.uk/images/favicon.ico" />
+
+
+        <!-- Scripts -->
+        <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+    </head>
+  
+    <body class="tw:bg-gray-50 tw:px-4">
+      <div class="tw:flex tw:items-center tw:justify-center tw:p-8">
+        <bkr-header src="https://assets-global.website-files.com/61f27d3474c2ef62975a0106/61f27d3474c2ef78475a0118_Booker%20logo.svg"></bkr-header>
+      </div>
+      <bkr-heading text="Login Verification"></bkr-heading>
+        
+      <div class="tw:flex tw:justify-center tw:bg-white tw:relative tw:border-solid tw:border tw:border-gray-50 tw:shadow-sm tw:border border-slate-100 tw:rounded-lg tw:max-w-lg tw:m-auto tw:p-8">
+        <div class="tw:max-w-sm tw:w-full">
+
+          <bkr-paragraph text="We have sent you a verification code to your registered mobile number, please enter your 8-digit code in the box below to continue your login. Didn't receive a SMS?"></bkr-paragraph>
+
+          <bkr-alert type="success" msg="New login code has been sent via SMS"></bkr-alert>
+          
+          <bkr-alert type="warning" msg="You will be able to request another code in 30 seconds"></bkr-alert>
+
+          <form action="/admin/portal/verification" method="post" autocomplete="disable-autocomplete" class="tw:space-y-4">
+            <div>
+              <bkr-input label="Verfication Code" for="VerificationCode"  maxlength="6" type="text" id="VerificationCode" name="VerificationCode"></bkr-input>
+            </div>
+      
+        
+                <div class="g-recaptcha"
+                     data-sitekey="6LfwwIQqAAAAANcF-qB9oAxVzaVwIum45H588zwK"
+                     data-callback="onSubmit"
+                     data-badge="inline"
+                     data-size="invisible">
+                </div>
+          
+                <bkr-button type="submit" text="Verify"></bkr-button>
+                <a class="tw:w-full tw:block tw:text-center tw:bg-gray tw:text-black tw:font-bold tw:py-2.5 tw:rounded-md tw:transition-colors" href="/admin/portal/login?action=cancel">Cancel</a>
+              </form>
+            </div>
+          </div>
+          <bkr-footer cd="CD1"></bkr-footer>
+  </body>
+</html>
