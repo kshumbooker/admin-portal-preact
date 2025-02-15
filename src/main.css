@@ -1,6 +1,9 @@
 @import "tailwindcss" prefix(tw);
 
 @theme {
+  
+  --font-display: "Lato", "sans-serif";
+
   --color-booker: #2356AA;
   --color-primary-50: #f4f9ff;
   --color-primary-100: #ebf6ff;

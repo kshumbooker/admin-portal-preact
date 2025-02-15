@@ -47,3 +47,4 @@ export const formatCurrency = (value, decimals = 2, currency = "GBP") => {
     maximumFractionDigits: decimals
   }).format(value);
 };
+
