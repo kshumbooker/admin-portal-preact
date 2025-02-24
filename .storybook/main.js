@@ -6,7 +6,6 @@ const config = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
-    "@storybook/addon-styling-webpack"
   ],
   framework: {
     name: "@storybook/preact-webpack5",

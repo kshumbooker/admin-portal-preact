@@ -1,5 +1,6 @@
 /** @type { import('@storybook/preact').Preview } */
-import "../src/main.css";
+import { h } from 'preact';
+import "../dist/output.css";
 import "typeface-lato";
 
 const preview = {
@@ -12,5 +13,7 @@ const preview = {
     },
   },
 };
+
+
 
 export default preview;
