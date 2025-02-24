@@ -1,1 +1,1 @@
-Installation - npm install then npm run build
+Installation - npm install then npm run storybook
