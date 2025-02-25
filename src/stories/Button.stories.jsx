@@ -8,4 +8,4 @@ export default {
   tags: ['autodocs'],
 };
 
-export const Default = () => <Button type="submit" text="Sign In"></Button>
+export const Default = () => <Button type="submit" text="Sign In" size="full"></Button>

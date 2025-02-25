@@ -6,6 +6,7 @@ import Button from '../components/Button';
 import Alert from '../components/Alert';
 import Paragraph from '../components/Paragraph';
 import Modal from '../components/Modal';
+import Link from '../components/Link';
 
 export default {
   title: 'Pages/Master',
@@ -34,7 +35,7 @@ Login.args = {
       data-size="invisible">
     </div>
     <div>
-      <Button type="submit" text="Sign In" />
+      <Button type="submit" text="Sign In" size="full" />
     </div>
   </>
   )
@@ -79,8 +80,8 @@ Didn't receive a SMS?" />
         data-size="invisible">
       </div>
       <div>
-        <Button type="submit" text="Verify" />
-        <Button type="button" text="Cancel" />
+        <Button type="submit" text="Verify" size="full" />
+        <Button type="button" text="Cancel" size="full" />
       </div>
     </>
   ),
@@ -106,7 +107,7 @@ ForgottenPassword.args = {
       data-size="invisible">
     </div>
     <div>
-      <Button type="submit" text="Sign In" />
+      <Button type="submit" text="Sign In" size="full" />
     </div>
    </>
   ),
@@ -114,6 +115,7 @@ ForgottenPassword.args = {
 
 export const TwoFactorAuth = Template.bind({});
 TwoFactorAuth.args = {
+  ...Otp.Args,
   children: (
    <>
     <Modal />
