@@ -10,6 +10,6 @@ const config = {
   framework: {
     name: "@storybook/preact-webpack5",
     options: {},
-  },
+  }
 };
 export default config;
