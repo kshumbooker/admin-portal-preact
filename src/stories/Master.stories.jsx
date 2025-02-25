@@ -5,6 +5,7 @@ import Heading from '../components/Heading';
 import Button from '../components/Button';
 import Alert from '../components/Alert';
 import Paragraph from '../components/Paragraph';
+import Modal from '../components/Modal';
 
 export default {
   title: 'Pages/Master',
@@ -107,6 +108,15 @@ ForgottenPassword.args = {
     <div>
       <Button type="submit" text="Sign In" />
     </div>
+   </>
+  ),
+}
+
+export const TwoFactorAuth = Template.bind({});
+TwoFactorAuth.args = {
+  children: (
+   <>
+    <Modal />
    </>
   ),
 }
