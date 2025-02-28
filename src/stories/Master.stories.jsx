@@ -63,7 +63,7 @@ Otp.args = {
 
 Didn't receive a SMS?" />
       </div>
-      <a class="tw:text-sm tw:text-booker tw:hover:text-booker tw:font-bold tw:my-4 tw:block" href="#">Click here to send a new code</a>
+      <Link href="#" id="sendCode" text="Click here to send a new code" />
       <div>
         <Alert msg="New login code has been sent via SMS" type="success" />
       </div>
@@ -81,7 +81,7 @@ Didn't receive a SMS?" />
       </div>
       <div>
         <Button type="submit" text="Verify" size="full" />
-        <Button type="button" text="Cancel" size="full" />
+        <Link href="/admin/portal/login?action=cancel" text="Cancel" class="tw:text-center tw:block tw:my-4 tw:text-[16px]" />
       </div>
     </>
   ),
@@ -119,6 +119,18 @@ TwoFactorAuth.args = {
   children: (
    <>
     <Modal title="Two-Factor Authentication" msg="As part of regular updates to the Booker Admin Portal, you will now be required to enter a mobile number for use with Two-Factor Authentication. Please enter your mobile number below. Once your number has been updated, you will be sent a One-Time Passcode to verify this is correct." />
+   </>
+  ),
+}
+
+export const PasswordRecovery = Template.bind({});
+PasswordRecovery.args = {
+  ...PasswordRecovery.Args,
+  children: (
+   <>
+    <Heading text="Forgotten Password"  />
+    <Paragraph text="If the user ID you have entered is valid and the account is active then a reset link will have been sent to you." />
+    <Button type="button" size="full" text="Continue" />
    </>
   ),
 }

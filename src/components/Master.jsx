@@ -1,10 +1,11 @@
 import { h } from 'preact';
-import { Header } from '../components/Header';
-import { Footer } from '../components/Footer';
+import { Header } from './Header';
+import { Footer } from './Footer';
 
 export const Master = ({validation, heading, children}) => {
   return (
   <>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <body class="tw:bg-gray-50 tw:px-4 tw:font-[Lato]">
     <div class="tw:flex tw:items-center tw:justify-center tw:p-8">
       <Header src="https://assets-global.website-files.com/61f27d3474c2ef62975a0106/61f27d3474c2ef78475a0118_Booker%20logo.svg" />  

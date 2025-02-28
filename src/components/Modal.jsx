@@ -1,6 +1,6 @@
 import { h } from 'preact';
-import { Input } from '../components/Input';
-import { Button } from '../components/Button';
+import { Input } from './Input';
+import { Button } from './Button';
 
 export const Modal = (props) => {
   return <div class="tw:relative tw:z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
