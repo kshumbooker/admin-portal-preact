@@ -125,10 +125,13 @@ TwoFactorAuth.args = {
 
 export const PasswordRecovery = Template.bind({});
 PasswordRecovery.args = {
-  ...PasswordRecovery.Args,
+  heading: (
+    <>
+      <Heading text="Forgotten Password" />
+    </>
+  ),
   children: (
    <>
-    <Heading text="Forgotten Password"  />
     <Paragraph text="If the user ID you have entered is valid and the account is active then a reset link will have been sent to you." />
     <Button type="button" size="full" text="Continue" />
    </>
