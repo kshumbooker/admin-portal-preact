@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <script src="../data.js"></script>
+    <script src="./src/utils/data.js"></script>
+    <script src="./dist/bundle.js"></script>
+    <link href="./dist/main.css" rel="stylesheet">
+
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
           <style type="text/tailwindcss">
             @theme {
@@ -30,28 +33,16 @@
     
     <aside id="navigation-sidebar" class="fixed top-0 left-0 z-40 w-64 h-dvh transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar" aria-hidden="true">
       <div class="p-6 bg-gray-50">
-         <img class="h-8 flex justify-center items-center" src="https://assets-global.website-files.com/61f27d3474c2ef62975a0106/61f27d3474c2ef78475a0118_Booker%20logo.svg">
+         <bkr-header src="https://assets-global.website-files.com/61f27d3474c2ef62975a0106/61f27d3474c2ef78475a0118_Booker%20logo.svg"></bkr-header>
       </div>
 
-    <!--<button type="button" data-drawer-hide="navigation-sidebar" aria-controls="navigation-sidebar" class="absolute -right-3 top-6 bg-blue-700 rounded-full p-1.5 shadow-lg hover:bg-blue-900 focus:outline-none block hidden sm:block">
-      <svg id="toggleIcon" class="w-4 h-4 text-white font-bold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-          
-      </svg>
-    </button>-->
 
       <div class="h-dvh px-3 py-4 overflow-y-auto bg-gray-50">
         <ul class="space-y-2 font-medium">
-          <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg group">
-              <svg class="w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
-                <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
-              </svg>
-              <span class="ms-3">Dashboard</span>
-            </a>
-          </li>
-          <li>
+          <bkr-nav-item-parent icon="ticket-simple" name="Click & Collect"></bkr-nav-item-parent>
+
+
+          <!--<li>
             <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100" aria-controls="dropdown-click-and-collect" data-collapse-toggle="dropdown-click-and-collect" aria-expanded="false">
               <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 group-hover:text-gray-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
                 <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"></path>
@@ -337,7 +328,7 @@
                  <a href="/admin/telesales" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 ">Telesales System</a>
                </li>
              </ul>
-          </li>
+          </li>-->
         </ul>
       </div>
     </aside>
@@ -391,8 +382,7 @@
           <li>
             <a
               class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline"
-              href="/signout"
-              data-twe-dropdown-item-ref
+              href="/signout" data-twe-dropdown-item-ref
               >Sign out</a
             >
           </li>

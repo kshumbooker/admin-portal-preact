@@ -1,58 +1,13 @@
-const data = [{
+const data = {
 	'header': 'https://assets-global.website-files.com/61f27d3474c2ef62975a0106/61f27d3474c2ef78475a0118_Booker%20logo.svg',
   'color': '#2356AA',
-	'page': [{
-			'uri': 'login',
-			'content': {
-				'heading': 'Administration Login',
-				'label1': 'User ID',
-				'label2': 'Password',
-				'button1': 'Sign In',
-				'link1': 'Forgot Password?'
-			}
+	'navigation': [{
+		'name': 'Click & Collect',
+		'icon': '<i class="fa-solid fa-computer-mouse"></i>',
+		'sub': [{
+			'name': 'Barred Categories',
+			'url': '/admin/function/AdminBarringManagement'
 		},
-    {
-      'uri': 'validation',
-      'content': {
-        'alert': 'Invalid User ID / Password combination, please try again'
-      }
-    },
-    {
-      'uri': 'forgottenpassword',
-      'content': {
-        'heading': 'Forgotten Password',
-        'paragraph1': 'If you have forgotten your website login password, fill this page in with your registered user ID.',
-        'label1': 'Enter your user ID',
-        'button1': 'Sign In'
-      }
-    },
-    {
-      'uri': 'verification',
-      'content': {
-        'heading': 'Login Verification',
-        'paragraph1': `We have sent you a verification code to your registered mobile number, please enter your 8-digit code in the box below to continue your login. 
-        
-        Didn\'t receive a SMS?`,
-        'link1': 'Click here to send a new code',
-        'alert1': 'New login code has been sent via SMS',
-        'alert2': 'You will be able to request another code in 30 seconds',
-        'label1': 'Verification Code',
-        
-      }
-    },
-		{
-			'uri': 'admin/portal',
-			'content': {
-				'name': 'IT Admin',
-				'department': 'CST Equity House',
-				'favourites': '',
-				'searchResults': '',
-				'category': [{
-						'name': 'Click & Collect',
-						'sub': [{
-								'name': 'Barred Categories',
-								'url': '/admin/function/AdminBarringManagement'
-							},
 							{
 								'name': 'Click and Collect Branches Configuration',
 								'url': '/admin/function/AdminCollectionBranches'
@@ -69,6 +24,7 @@ const data = [{
 					},
 					{
 						'name': 'Customer',
+						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
 						'sub': [{
 								'name': 'BRP Email Override',
 								'url': '/admin/function/AdminBRPEmailOverride'
@@ -117,6 +73,7 @@ const data = [{
 					},
 					{
 						'name': 'Branch',
+						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
 						'sub': [{
 								'name': 'Butchery Manager Profile',
 								'url': '/admin/function/AdminButcheryProfile'
@@ -141,6 +98,7 @@ const data = [{
 					},
 					{
 						'name': 'Central Billing',
+						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
 						'sub': [{
 								'name': 'Central Billing Supplier Management',
 								'url': '/admin/function/AdminCentralBillingSupplier'
@@ -153,6 +111,7 @@ const data = [{
 					},
 					{
 						'name': 'User Function',
+						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
 						'sub': [{
 								'name': 'Change Your Details',
 								'url': '/admin/function/adminchangepassword'
@@ -189,6 +148,7 @@ const data = [{
 					},
 					{
 						'name': 'Claims',
+						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
 						'sub': [{
 								'name': 'Claims/Tickets Visibility',
 								'url': '/admin/function/adminclaimstickets'
@@ -205,6 +165,7 @@ const data = [{
 					},
 					{
 						'name': 'Product',
+						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
 						'sub': [{
 								'name': 'Delete Brandbank Data',
 								'url': '/admin/function/AdminDeleteBrandBank'
@@ -229,6 +190,7 @@ const data = [{
 					},
 					{
 						'name': 'Digital Vouchers',
+						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
 						'sub': [{
 							'name': 'Create Digital Voucher',
 							'url': '/admin/DigitalVouchers'
@@ -236,6 +198,7 @@ const data = [{
 					},
 					{
 						'name': 'Content',
+						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
 						'sub': [{
 								'name': 'Facia Management',
 								'url': '/admin/function/Adminfacia'
@@ -252,6 +215,7 @@ const data = [{
 					},
 					{
 						'name': 'Promotion',
+						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
 						'sub': [{
 								'name': 'My Allocations/Weekly Deals',
 								'url': 'admin/function/AdminAllocations'
@@ -276,6 +240,7 @@ const data = [{
 					},
 					{
 						'name': 'Search',
+						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
 						'sub': [{
 								'name': 'Negative Search Terms',
 								'url': '/admin/function/AdminNegativeSearches'
@@ -288,6 +253,7 @@ const data = [{
 					},
 					{
 						'name': 'OurBooker',
+						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
 						'sub': [{
 							'name': 'Account Deregister',
 							'url': '/admin/function/OBAccountDeregister'
@@ -301,6 +267,7 @@ const data = [{
 					},
 					{
 						'name': 'Telesales',
+						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
 						'sub': [{
 							'name': 'Telesales System',
 							'url': '/admin/telesales'
@@ -354,11 +321,6 @@ const data = [{
 								'url': '/catalog/myallocationshome.aspx'
 							}
 						]
-					}
-				]
-			}
-		}
-	]
-}];
+				}]
+}
   
-   

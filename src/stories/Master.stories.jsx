@@ -9,11 +9,12 @@ import Modal from '../components/Modal';
 import Link from '../components/Link';
 
 export default {
-  title: 'Pages/Master',
+  title: 'Pages/Logged Out',
   component: Master,
 };
 
 const Template = (args) => <><Master {...args} /></>;
+
 
 export const Login = Template.bind({});
 Login.args = {
@@ -133,7 +134,8 @@ PasswordRecovery.args = {
   children: (
    <>
     <Paragraph text="If the user ID you have entered is valid and the account is active then a reset link will have been sent to you." />
-    <Button type="button" size="full" text="Continue" />
+    <Button type="link" href="/admin/portal/login" class="tw:w-full tw:block tw:bg-booker tw:text-center tw:text-white" text="Continue" />
    </>
   ),
 }
+
