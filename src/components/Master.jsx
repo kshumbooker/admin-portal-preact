@@ -5,10 +5,12 @@ import { Footer } from './Footer';
 export const Master = ({validation, heading, children}) => {
   return (
   <>
+  <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <body class="tw:bg-gray-50 tw:px-4 tw:font-[Lato]">
+  <body class="tw:bg-gray-50 tw:px-4 tw:font-[Inter]">
     <div class="tw:flex tw:items-center tw:justify-center tw:p-8">
-      <Header src="https://assets-global.website-files.com/61f27d3474c2ef62975a0106/61f27d3474c2ef78475a0118_Booker%20logo.svg" />  
+      <Header />
+
     </div>
     {heading}
     {validation}

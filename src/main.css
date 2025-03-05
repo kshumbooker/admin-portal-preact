@@ -1,7 +1,140 @@
 @import 'tailwindcss' prefix(tw);
 
 @theme {
-  --color-booker: #2356AA;
+    --color-primary-50: #fff0eb;
+    --color-primary-100: #ffe6df;
+    --color-primary-200: #ffd0c2;
+    --color-primary-300: #ffa185;
+    --color-primary-400: #ff7349;
+    --color-primary-500: #ff480c;
+    --color-primary-600: #dd3300;
+    --color-primary-700: #aa2700;
+    --color-primary-800: #401103;
+    --color-primary: #ff480c;
+  
+    --color-secondary-50: #faf9f50d;
+    --color-secondary-100: #faf9f51a;
+    --color-secondary-200: #faf9f533;
+    --color-secondary-300: #faf9f54d;
+    --color-secondary-400: #faf9f566;
+    --color-secondary-500: #faf9f580;
+    --color-secondary-600: #faf9f599;
+    --color-secondary-700: #faf9f5b3;
+    --color-secondary-800: #faf9f5cc;
+    --color-secondary-900: #faf9f5e6;
+    --color-secondary-1000: #faf9f5;
+    --color-secondary-1100: #f5f4f0;
+    --color-secondary-1200: #ebeae6;
+    --color-secondary-1300: #d1cfc7;
+    --color-secondary-2000: #1f1e19;
+  
+    --color-tertiary-50: #f2fdfb;
+    --color-tertiary-100: #dcfaf5;
+    --color-tertiary-200: #cef8f2;
+    --color-tertiary-300: #bdf5ed;
+    --color-tertiary-400: #45e3cc;
+    --color-tertiary-500: #1fceb5;
+    --color-tertiary-600: #1aad98;
+    --color-tertiary-700: #127869;
+    --color-tertiary-800: #093e37;
+  
+    --color-red-100: #fce8e8;
+    --color-red-200: #f8c2c2;
+    --color-red-300: #f29393;
+    --color-red-400: #ec5f5f;
+    --color-red-500: #dc3545;
+    --color-red-600: #c32733;
+    --color-red-700: #9e1f28;
+    --color-red-800: #7b181f;
+    --color-red-900: #5c1117;
+  
+    --color-orange-100: #fff4e5;
+    --color-orange-200: #ffe4bf;
+    --color-orange-300: #ffd08a;
+    --color-orange-400: #ffb74d;
+    --color-orange-500: #ff9500;
+    --color-orange-600: #db7c00;
+    --color-orange-700: #b86200;
+    --color-orange-800: #944d00;
+    --color-orange-900: #783c00;
+  
+    --color-yellow-100: #fff8d1;
+    --color-yellow-200: #fff3ad;
+    --color-yellow-300: #ffe65c;
+    --color-yellow-400: #ffe23d;
+    --color-yellow-500: #ffdf2b;
+    --color-yellow-600: #ffd905;
+  
+    --color-green-100: #e6f9e6;
+    --color-green-200: #c1f2c1;
+    --color-green-300: #92e892;
+    --color-green-400: #5fda5f;
+    --color-green-500: #28a745;
+    --color-green-600: #218838;
+    --color-green-700: #19692c;
+    --color-green-800: #145222;
+    --color-green-900: #0e3d19;
+  
+    --color-beige-1000: #ece8e1;
+  
+    --color-black-100: #0000000d;
+    --color-black-200: #0000001a;
+    --color-black-300: #00000033;
+    --color-black-400: #00000066;
+    --color-black-500: #000000b3;
+    --color-black-600: #000000cc;
+    --color-black-700: #000000d9;
+    --color-black-800: #000000e6;
+    --color-black-900: #000000f2;
+    --color-black-1000: #000000ff;
+  
+    --color-white-100: #ffffff0d;
+    --color-white-200: #ffffff1a;
+    --color-white-300: #ffffff33;
+    --color-white-400: #ffffff66;
+    --color-white-500: #ffffffb3;
+    --color-white-600: #ffffffcc;
+    --color-white-700: #ffffffd9;
+    --color-white-800: #ffffffe6;
+    --color-white-900: #fffffff2;
+    --color-white-1000: #ffffffff;
+  
+    --color-grey-100: #f5f5f5;
+    --color-grey-200: #f2f2f2;
+    --color-grey-300: #ececec;
+    --color-grey-400: #cdcdcd;
+    --color-grey-500: #949494;
+    --color-grey-600: #767676;
+    --color-grey-700: #5a5a5a;
+    --color-grey-800: #434343;
+    --color-grey-900: #303030;
+    --color-grey-1000: #242424;
+    --color-grey-1100: #ebeae6;
+
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1313px;
+    --breakpoint-2xl: 1440px;
+  
+    /* Typography */
+    --text-xs: 0.625rem; /* 10px */
+    --text-2xs: 0.688rem; /* 11px */
+    --text-sm: 0.75rem; /* 12px */
+    --text-13: 0.813rem; /* 13px */
+    --text-base: 0.875rem; /* 14px */
+    --text-lg: 1rem; /* 16px */
+    --text-xl: 1.125rem; /* 18px */
+    --text-2xl: 1.25rem; /* 20px */
+    --text-3xl: 1.5rem; /* 24px */
+    --text-4xl: 1.75rem; /* 28px */
+    --text-5xl: 2rem; /* 32px */
+    --text-6xl: 2.5rem; /* 40px */
+    --text-7xl: 3rem; /* 48px */
+    --text-8xl: 3.75rem; /* 60px */
+    --text-9xl: 5.5rem; /* 88px */  
+
+    --font-sans: Inter, sans-serif;
 }
 
 /*
@@ -24,7 +157,9 @@
   /* Add default font family */
   html,
   body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 }
+
+  
 

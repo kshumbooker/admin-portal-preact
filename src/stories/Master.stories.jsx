@@ -82,7 +82,7 @@ Didn't receive a SMS?" />
       </div>
       <div>
         <Button type="submit" text="Verify" size="full" />
-        <Link href="/admin/portal/login?action=cancel" text="Cancel" class="tw:text-center tw:block tw:my-4 tw:text-[16px]" />
+        <Link href="/admin/portal/login?action=cancel" text="Cancel" class="tw:text-center tw:block tw:my-4" />
       </div>
     </>
   ),
@@ -134,7 +134,7 @@ PasswordRecovery.args = {
   children: (
    <>
     <Paragraph text="If the user ID you have entered is valid and the account is active then a reset link will have been sent to you." />
-    <Button type="link" href="/admin/portal/login" class="tw:w-full tw:block tw:bg-booker tw:text-center tw:text-white" text="Continue" />
+    <Button type="link" href="/admin/portal/login" class="tw:w-full tw:my-4 tw:no-underline tw:inline-flex tw:text-center tw:items-center tw:justify-center tw:rounded-[120px] tw:focus:outline-hidden tw:transition-all tw:leading-none tw:font-medium tw:px-4 tw:py-3 tw:text-base tw:bg-black-1000 tw:text-white-1000 tw:cursor-pointer tw:hover:bg-tertiary-500 tw:hover:text-black-1000 tw:no-underline" text="Continue" />
    </>
   ),
 }

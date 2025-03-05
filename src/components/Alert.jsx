@@ -4,9 +4,9 @@ import { h } from 'preact';
 export const Alert = (props) => { 
     const mapping = {
         success: 'green', 
-        warning: 'yellow', 
+        warning: 'orange', 
         danger: 'red', 
-        info: 'blue', 
+        info: 'grey', 
     }
 
     return <div class={`tw:bg-${mapping[props.type]}-100 tw:text-${mapping[props.type]}-800 tw:flex tw:items-center tw:p-4 tw:my-4 tw:text-sm tw:rounded-lg tw:max-w-lg tw:m-auto`} role="alert">

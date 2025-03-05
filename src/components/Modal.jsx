@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import { Input } from './Input';
 import { Button } from './Button';
+import { Paragraph } from './Paragraph';
 
 export const Modal = (props) => {
   return <div class="tw:relative tw:z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -14,9 +15,9 @@ export const Modal = (props) => {
         <div class="tw:bg-white tw:px-4 tw:pt-5 tw:pb-4 tw:sm:p-6 tw:sm:pb-4">
           <div class="tw:sm:flex tw:sm:items-start">
             <div class="tw:mt-3 tw:text-center tw:sm:mt-0 tw:sm:ml-4 tw:sm:text-left">
-              <h2 class="tw:text-base tw:font-semibold" id="modal-title">{props.title}</h2>
+              <h2 class="tw:text-3xl tw:font-bold" id="modal-title">{props.title}</h2>
               <div class="tw:mt-2">
-                <p class="tw:text-sm tw:text-gray-500">{props.msg}</p>
+                <Paragraph text={props.msg} />
               </div>
               <div class="tw:my-4">
                 <Input type="text" label="Mobile Number" id="mobileNumber" name="mobileNumber" data-valid="false" pattern="/^-?\d+\.?\d*$/"  />
@@ -26,7 +27,7 @@ export const Modal = (props) => {
           </div>
         </div>
         <div class="tw:bg-gray-50 tw:px-4 tw:py-3 tw:sm:flex tw:sm:flex-row-reverse tw:sm:px-6">
-          <Button type="submit" text="Update" size="" />
+          <Button type="submit" text="Update" size="full" />
         </div>
       </div>
     </div>

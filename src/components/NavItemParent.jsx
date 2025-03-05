@@ -1,27 +1,16 @@
 import { h } from 'preact';
-import { NavItem } from './NavItem';
+import { NavItemChildren } from './NavItemChildren';
 
-export const NavItemParent = (props) => 
+export const NavItemParent = (props) =>
 <li>
-<button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100" aria-controls="dropdown-click-and-collect" data-collapse-toggle="dropdown-click-and-collect" aria-expanded="false">
-  
-  <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">{props.name}</span>
-  
-</button>
-<ul id="dropdown-click-and-collect" class="hidden py-2 space-y-2">
-  <li>
-    <a href="/admin/function/AdminBarringManagement" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Barred Categories</a>
-  </li>
-  <li>
-    <a href="/admin/function/AdminCollectionBranches" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Click and Collect Branches Configuration</a>
-  </li>
-  <li>
-    <a href="/admin/function/AdminCollectionLeadTime" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Collection Lead Time</a>
-  </li>
-  <li>
-    <a href="/admin/function/AdminOnlineExclusiveBranches" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Online Exclusive Branches</a>
-  </li>
-</ul>
+  <button type="button" class="tw:flex tw:items-center tw:w-full tw:p-2 tw:text-base tw:text-gray-900 tw:transition tw:duration-75 tw:rounded-lg tw:group tw:hover:bg-gray-100" aria-controls={`dropdown-${props.name}`} data-collapse-toggle={`dropdown-${props.name}`} aria-expanded="false">
+    <i class={`fa-solid fa-${props.icon}`}></i>
+    <span class="tw:flex-1 tw:ms-3 tw:text-left tw:rtl:text-right tw:whitespace-nowrap">{props.name}</span>
+  </button>
+  <ul id={props.name} class="tw:hidden tw:py-2 tw:space-y-2">
+    ${[...props.children].map(child => <h1>TEST</h1>)}
+    <bkr-nav-item-children />
+  </ul>
 </li>;
 
 

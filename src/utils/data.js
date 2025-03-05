@@ -2,325 +2,339 @@ const data = {
 	'header': 'https://assets-global.website-files.com/61f27d3474c2ef62975a0106/61f27d3474c2ef78475a0118_Booker%20logo.svg',
   'color': '#2356AA',
 	'navigation': [{
-		'name': 'Click & Collect',
-		'icon': '<i class="fa-solid fa-computer-mouse"></i>',
-		'sub': [{
+		'id': 'clickAndCollect',
+		'name': 'Click and Collect',
+		'icon': 'computer-mouse',
+		'children': [{
 			'name': 'Barred Categories',
-			'url': '/admin/function/AdminBarringManagement'
+			'href': '/admin/function/AdminBarringManagement'
 		},
 							{
 								'name': 'Click and Collect Branches Configuration',
-								'url': '/admin/function/AdminCollectionBranches'
+								'href': '/admin/function/AdminCollectionBranches'
 							},
 							{
 								'name': 'Collection Lead Time',
-								'url': '/admin/function/AdminCollectionLeadTime'
+								'href': '/admin/function/AdminCollectionLeadTime'
 							},
 							{
 								'name': 'Online Exclusive Branches',
-								'url': '/admin/function/AdminOnlineExclusiveBranches'
+								'href': '/admin/function/AdminOnlineExclusiveBranches'
 							}
 						]
 					},
-					{
+					/*{
+						'id': 'customer',
 						'name': 'Customer',
-						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
-						'sub': [{
+						'icon': 'user',
+						'children': [{
 								'name': 'BRP Email Override',
-								'url': '/admin/function/AdminBRPEmailOverride'
+								'href': '/admin/function/AdminBRPEmailOverride'
 							},
 							{
 								'name': 'Contact Preferences',
-								'url': '/admin/function/admincontactprefs'
+								'href': '/admin/function/admincontactprefs'
 							},
 							{
 								'name': 'CRM Customer Search',
-								'url': '/admin/function/admincrmcustomersearch'
+								'href': '/admin/function/admincrmcustomersearch'
 							},
 							{
 								'name': 'CST Delivery Tracker',
-								'url': '/admin/function/admincstdeliverytracker'
+								'href': '/admin/function/admincstdeliverytracker'
 							},
 							{
 								'name': 'Customer Passsword Reset',
-								'url': '/admin/function/adminpasswordreset'
+								'href': '/admin/function/adminpasswordreset'
 							},
 							{
 								'name': 'Customer Account Deletion',
-								'url': '/admin/function/AdminAccountDelete'
+								'href': '/admin/function/AdminAccountDelete'
 							},
 							{
 								'name': 'Change Login Email',
-								'url': '/admin/function/adminemailchange'
+								'href': '/admin/function/adminemailchange'
 							},
 							{
 								'name': 'Hide Prices for National Accounts',
-								'url': '/admin/function/adminnachideprices'
+								'href': '/admin/function/adminnachideprices'
 							},
 							{
 								'name': 'Online Registration - Registration Assistance',
-								'url': '/admin/function/AdminRegistrationAssistance'
+								'href': '/admin/function/AdminRegistrationAssistance'
 							},
 							{
 								'name': 'Prevent Self Registration',
-								'url': '/admin/function/AdminPreventSelfReg'
+								'href': '/admin/function/AdminPreventSelfReg'
 							},
 							{
 								'name': 'Registration - Classification',
-								'url': '/admin/function/AdminClassifications'
+								'href': '/admin/function/AdminClassifications'
 							}
 						]
 					},
 					{
+						'id': 'branch',
 						'name': 'Branch',
-						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
-						'sub': [{
+						'icon': 'code-branch',
+						'children': [{
 								'name': 'Butchery Manager Profile',
-								'url': '/admin/function/AdminButcheryProfile'
+								'href': '/admin/function/AdminButcheryProfile'
 							},
 							{
 								'name': 'Butchery Messages',
-								'url': '/admin/function/AdminButcheryMessages'
+								'href': '/admin/function/AdminButcheryMessages'
 							},
 							{
 								'name': 'Restrict Login to a Branch',
-								'url': '/admin/function/AdminRestrictLogin'
+								'href': '/admin/function/AdminRestrictLogin'
 							},
 							{
 								'name': 'Managers Photos',
-								'url': '/admin/function/AdminManagerPictures'
+								'href': '/admin/function/AdminManagerPictures'
 							},
 							{
 								'name': 'Managers Wipeboard',
-								'url': '/admin/function/AdminWipeboard'
+								'href': '/admin/function/AdminWipeboard'
 							}
 						],
 					},
 					{
+						'id': 'centralBilling',
 						'name': 'Central Billing',
-						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
-						'sub': [{
+						'icon': 'money-bill',
+						'children': [{
 								'name': 'Central Billing Supplier Management',
-								'url': '/admin/function/AdminCentralBillingSupplier'
+								'href': '/admin/function/AdminCentralBillingSupplier'
 							},
 							{
 								'name': 'Central Billing Manage Customers',
-								'url': '/admin/function/AdminCentralBillingCustomers'
+								'href': '/admin/function/AdminCentralBillingCustomers'
 							}
 						],
 					},
 					{
+						'id': 'userFunction',
 						'name': 'User Function',
-						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
-						'sub': [{
+						'icon': 'users',
+						'children': [{
 								'name': 'Change Your Details',
-								'url': '/admin/function/adminchangepassword'
+								'href': '/admin/function/adminchangepassword'
 							},
 							{
 								'name': 'Portal User Management',
-								'url': '/admin/function/adminusers'
+								'href': '/admin/function/adminusers'
 							},
 							{
 								'name': 'Contact Preferences User Management',
-								'url': '/admin/function/adminuserscontactprefs'
+								'href': '/admin/function/adminuserscontactprefs'
 							},
 							{
 								'name': 'Telesales User Management',
-								'url': '/admin/function/adminuserscontactprefs'
+								'href': '/admin/function/adminuserscontactprefs'
 							},
 							{
 								'name': 'Wipeboard User Management',
-								'url': '/admin/function/adminuserswipeboard'
+								'href': '/admin/function/adminuserswipeboard'
 							},
 							{
 								'name': 'Logout',
-								'url': '/admin/portal/logout'
+								'href': '/admin/portal/logout'
 							},
 							{
 								'name': 'Portal Roles Management',
-								'url': '/admin/function/adminroles'
+								'href': '/admin/function/adminroles'
 							},
 							{
 								'name': 'Manage User Departments',
-								'url': '/admin/function/adminuserdepartments'
+								'href': '/admin/function/adminuserdepartments'
 							}
 						],
 					},
 					{
+						'id': 'claims',
 						'name': 'Claims',
-						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
-						'sub': [{
+						'icon': 'person-circle-exclamation',
+						'children': [{
 								'name': 'Claims/Tickets Visibility',
-								'url': '/admin/function/adminclaimstickets'
+								'href': '/admin/function/adminclaimstickets'
 							},
 							{
 								'name': 'Create New Claim',
-								'url': '/admin/function/admincreateclaim'
+								'href': '/admin/function/admincreateclaim'
 							},
 							{
 								'name': 'View Claims',
-								'url': '/admin/function/adminviewclaim'
+								'href': '/admin/function/adminviewclaim'
 							}
 						],
 					},
 					{
+						'id': 'product',
 						'name': 'Product',
-						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
-						'sub': [{
+						'icon': 'product-hunt',
+						'children': [{
 								'name': 'Delete Brandbank Data',
-								'url': '/admin/function/AdminDeleteBrandBank'
+								'href': '/admin/function/AdminDeleteBrandBank'
 							},
 							{
 								'name': 'Delete Images',
-								'url': '/admin/function/AdminDeleteImages'
+								'href': '/admin/function/AdminDeleteImages'
 							},
 							{
 								'name': 'Minimum Delivery Management',
-								'url': '/admin/function/AdminDeliveryMinimum'
+								'href': '/admin/function/AdminDeliveryMinimum'
 							},
 							{
 								'name': 'Brandbank EAN Retrieval',
-								'url': '/admin/function/AdminBrandbank'
+								'href': '/admin/function/AdminBrandbank'
 							},
 							{
 								'name': 'Choose Filters to Display',
-								'url': '/admin/function/AdminManageFilters'
+								'href': '/admin/function/AdminManageFilters'
 							}
 						],
 					},
 					{
+						'id': 'digitalVouchers',
 						'name': 'Digital Vouchers',
-						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
-						'sub': [{
+						'icon': 'ticket',
+						'children': [{
 							'name': 'Create Digital Voucher',
-							'url': '/admin/DigitalVouchers'
+							'href': '/admin/DigitalVouchers'
 						}],
 					},
 					{
+						'id': 'content',
 						'name': 'Content',
-						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
-						'sub': [{
+						'icon': 'arrows-to-circle',
+						'children': [{
 								'name': 'Facia Management',
-								'url': '/admin/function/Adminfacia'
+								'href': '/admin/function/Adminfacia'
 							},
 							{
 								'name': 'Website Bulletin',
-								'url': '/admin/function/AdminBulletin'
+								'href': '/admin/function/AdminBulletin'
 							},
 							{
 								'name': 'Site Settings',
-								'url': '/admin/function/AdminSettings'
+								'href': '/admin/function/AdminSettings'
 							}
 						],
 					},
 					{
+						'id': 'promotion',
 						'name': 'Promotion',
-						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
-						'sub': [{
+						'icon': 'percent',
+						'children': [{
 								'name': 'My Allocations/Weekly Deals',
-								'url': 'admin/function/AdminAllocations'
+								'href': 'admin/function/AdminAllocations'
 							},
 							{
 								'name': 'My Allocations/Weekly Deals Report',
-								'url': '/admin/function/AdminAllocationsReport'
+								'href': '/admin/function/AdminAllocationsReport'
 							},
 							{
 								'name': 'Pre-Sell Management',
-								'url': '/admin/function/AdminPresellManagement'
+								'href': '/admin/function/AdminPresellManagement'
 							},
 							{
 								'name': 'Pre-Sell Orders Report',
-								'url': '/admin/function/AdminPresellOrdersReport'
+								'href': '/admin/function/AdminPresellOrdersReport'
 							},
 							{
 								'name': 'Pre-Sell Report',
-								'url': '/admin/function/AdminPresellReport'
+								'href': '/admin/function/AdminPresellReport'
 							}
 						],
 					},
 					{
+						'id': 'search',
 						'name': 'Search',
-						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
-						'sub': [{
+						'icon': 'magnifying-glass',
+						'children': [{
 								'name': 'Negative Search Terms',
-								'url': '/admin/function/AdminNegativeSearches'
+								'href': '/admin/function/AdminNegativeSearches'
 							},
 							{
 								'name': 'Search Phrase Synonyms',
-								'url': '/admin/function/AdminSearchTokens'
+								'href': '/admin/function/AdminSearchTokens'
 							}
 						],
 					},
 					{
+						'id': 'ourbooker',
 						'name': 'OurBooker',
-						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
-						'sub': [{
+						'icon': '',
+						'children': [{
 							'name': 'Account Deregister',
-							'url': '/admin/function/OBAccountDeregister'
+							'href': '/admin/function/OBAccountDeregister'
 						}],
-
+						'id': 'shopByBrand',
 						'name': 'Shop By Brand',
-						'sub': [{
+						'icon': 'shop',
+						'children': [{
 							'name': 'Supplier Brand Management',
-							'url': '/admin/ShopByBrand/ActiveBrandListing'
+							'href': '/admin/ShopByBrand/ActiveBrandListing'
 						}],
 					},
 					{
+						'id': 'telesales',
 						'name': 'Telesales',
-						'icon': '<i class="fa-solid fa-computer-mouse"></i>',
-						'sub': [{
+						'icon': 'tv',
+						'children': [{
 							'name': 'Telesales System',
-							'url': '/admin/telesales'
+							'href': '/admin/telesales'
 						}],
-						'extraSub': [{
+						'childChildren': [{
 								'name': 'Register Customer',
-								'url': '/admin/telesales/entercustomernumber'
+								'href': '/admin/telesales/entercustomernumber'
 							},
 							{
 								'name': 'Choose Customer',
-								'url': '/admin/telesales/selectcustomer'
+								'href': '/admin/telesales/selectcustomer'
 							},
 							{
 								'name': 'Customer Search',
-								'url': '/admin/telesales/customersearch'
+								'href': '/admin/telesales/customersearch'
 							},
 							{
 								'name': 'Create Order',
-								'url': '/admin/telesales/productorderentry'
+								'href': '/admin/telesales/productorderentry'
 							},
 							{
 								'name': 'Edit Customer Account',
-								'url': '/admin/telesales/editcustomeracc'
+								'href': '/admin/telesales/editcustomeracc'
 							},
 							{
 								'name': 'Recent Purchases',
-								'url': '/products/RecentPurchases'
+								'href': '/products/RecentPurchases'
 							},
 							{
 								'name': 'Shopping Lists',
-								'url': '/Products/ShoppingList'
+								'href': '/Products/ShoppingList'
 							},
 							{
 								'name': 'My Booker',
-								'url': '/my-booker'
+								'href': '/my-booker'
 							},
 							{
 								'name': 'Products',
-								'url': '/products/categories'
+								'href': '/products/categories'
 							},
 							{
 								'name': 'Promotions',
-								'url': '/catalog/promotions'
+								'href': '/catalog/promotions'
 							},
 							{
 								'name': 'Services',
-								'url': '/catalog/services'
+								'href': '/catalog/services'
 							},
 							{
 								'name': 'Deals For You',
-								'url': '/catalog/myallocationshome.aspx'
+								'href': '/catalog/myallocationshome.aspx'
 							}
 						]
-				}]
+				}*/]
 }
   
