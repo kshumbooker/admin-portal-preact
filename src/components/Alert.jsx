@@ -15,7 +15,7 @@ export const Alert = (props) => {
     </svg>
     
     <div>
-        <span class="tw:font-bold">{props.msg}</span>
+        <span class="tw:font-bold tw:text-base">{props.msg}</span>
     </div>
     <button type="button" class={`tw:ms-auto tw:-mx-1.5 tw:-my-1.5 tw:rounded-lg tw:focus:ring-2 tw:focus:ring-${mapping[props.type]}-400 tw:p-1.5 tw:hover:bg-${mapping[props.type]}-200 tw:inline-flex tw:items-center tw:justify-center tw:h-8 tw:w-8`} aria-label="Close">
       <span class="tw:sr-only">Close</span>

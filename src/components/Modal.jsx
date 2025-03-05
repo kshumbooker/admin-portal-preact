@@ -15,7 +15,7 @@ export const Modal = (props) => {
         <div class="tw:bg-white tw:px-4 tw:pt-5 tw:pb-4 tw:sm:p-6 tw:sm:pb-4">
           <div class="tw:sm:flex tw:sm:items-start">
             <div class="tw:mt-3 tw:text-center tw:sm:mt-0 tw:sm:ml-4 tw:sm:text-left">
-              <h2 class="tw:text-3xl tw:font-bold" id="modal-title">{props.title}</h2>
+              <h2 class="tw:text-3xl tw:font-bold tw:block tw:my-4" id="modal-title">{props.title}</h2>
               <div class="tw:mt-2">
                 <Paragraph text={props.msg} />
               </div>
