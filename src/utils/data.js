@@ -23,7 +23,7 @@ const data = {
 							}
 						]
 					},
-					/*{
+					{
 						'id': 'customer',
 						'name': 'Customer',
 						'icon': 'user',
@@ -335,6 +335,6 @@ const data = {
 								'href': '/catalog/myallocationshome.aspx'
 							}
 						]
-				}*/]
+				}]
 }
   
