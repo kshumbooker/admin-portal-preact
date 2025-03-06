@@ -7,8 +7,8 @@ export default {
   component: Paragraph
 };
 
-export const Validation = () => <Paragraph text="If you have forgotten your website login password, fill this page in with your registered user ID." />
+export const Validation = () => <Paragraph classes="tw:mb-6" text="If you have forgotten your website login password, fill this page in with your registered user ID." />
 
-export const Otp = () => <Paragraph text={`We have sent you a verification code to your registered mobile number, please enter your 8-digit code in the box below to continue your login.
+export const Otp = () => <Paragraph classes="tw:mb-6" text={`We have sent you a verification code to your registered mobile number, please enter your 8-digit code in the box below to continue your login.
   
 Didn't receive a SMS?`} />
