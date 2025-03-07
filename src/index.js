@@ -21,7 +21,7 @@ import { SimpleText } from './components/SimpleText';
 register(Header, 'bkr-header', ['src']);
 register(Input, 'bkr-input', ['label', 'linkurl', 'linktext', 'tag_id', 'name', 'type', 'for', 'dataVal', 'maxLength', 'dataValLength', 'dataValLengthMax']);
 register(Button, 'bkr-button', ['type', 'text', 'classes', 'tag_id']); 
-register(Alert, 'bkr-alert', ['type', 'msg', 'classes']); 
+register(Alert, 'bkr-alert', ['type', 'msg', 'classes', 'ishidden']); 
 register(Footer, 'bkr-footer', ['cd']);
 register(Heading, 'bkr-heading', ['text']);
 register(Paragraph, 'bkr-paragraph', ['text', 'classes']);
