@@ -19,7 +19,6 @@ import { Favourite } from './components/Favourite';
 import { SimpleText } from './components/SimpleText';
  
 register(Header, 'bkr-header', ['src']);
-register(Input, 'bkr-input', ['label', 'id', 'name', 'type', 'for', 'dataVal', 'maxlength', 'dataValLength', 'dataValLengthMax']);
 register(Input, 'bkr-input', ['label', 'linkurl', 'linktext', 'tag_id', 'name', 'type', 'for', 'dataVal', 'maxLength', 'dataValLength', 'dataValLengthMax']);
 register(Button, 'bkr-button', ['type', 'text', 'classes', 'tag_id']); 
 register(Alert, 'bkr-alert', ['type', 'msg', 'classes']); 

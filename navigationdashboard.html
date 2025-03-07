@@ -282,7 +282,7 @@
     <script>
       let navigationSidebarContainer = document.querySelector('#navigation-sidebar-container');
       navigationSidebarContainer.innerHTML = data.navigation.map(nav => 
-        `<bkr-nav-item-parent id="${nav.id}" icon="${nav.icon}" name="${nav.name}" children='${JSON.stringify(nav.children)}'></bkr-nav-item-parent>`).join('');
+        `<bkr-nav-item-parent id="${nav.id}" icon="${nav.icon}" name="${nav.name}" children=[nav.children]></bkr-nav-item-parent>`).join('');
     </script>
   </body>
 </html>
