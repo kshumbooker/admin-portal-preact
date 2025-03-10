@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booker Admin Portal</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script type="text/javascript" src="./util/data.js"></script>
+    <script src="../dist/bundle.js"></script>
+    <link href="../dist/main.css" rel="stylesheet">    
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.booker.co.uk/images/favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+  </head>
+  <body class="tw:h-screen tw:bg-secondary-1000 tw:font-[Inter]">
+    <div class="tw:flex tw:items-center tw:justify-center tw:p-8">
+      <bkr-header></bkr-header>
+    </div>
+    
+
+    <div id="app"></div>
+    
+    <script src="./app.js"></script>
+    </body>
+    <bkr-footer cd="CD4"></bkr-footer>
+</html>

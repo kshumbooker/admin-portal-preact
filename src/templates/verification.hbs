@@ -1,0 +1,19 @@
+<bkr-heading text="{{heading}}"></bkr-heading>
+<div class="tw:flex tw:w-full tw:h-full tw:justify-center">
+  <div class="tw:rounded-2xl tw:bg-secondary-1200 tw:p-8 tw:w-md">
+    <form method="post" autocomplete="disable-autocomplete" class="tw:space-y-4 tw:my-5">
+      <bkr-paragraph text="{{paragraph}}"></bkr-paragraph>
+
+      <bkr-link href="#" id="sendCode" text="Click here to send a new code"></bkr-link>
+      <bkr-alert type="{{alert1.type}}" msg="{{alert1.msg}}"></bkr-alert>
+      
+      <bkr-alert type="{{alert2.type}}" msg="{{alert2.msg}}"></bkr-alert>
+
+      <bkr-input label="Verification Code" for="Verification" type="text" id="Verification" name="Verification"></bkr-input>
+
+      <bkr-button type="submit" text="Verify" classes="tw:w-full tw:bg-black-1000 tw:text-white-1000 tw:hover:bg-tertiary-500 tw:hover:text-black-1000"></bkr-button>
+      
+      <bkr-link href="/admin/portal/login?action=cancel" text="Cancel" class="tw:text-center tw:block tw:my-4"></bkr-link>
+    </form>
+  </div>
+</div>      

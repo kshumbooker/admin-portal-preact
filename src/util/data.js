@@ -1,7 +1,57 @@
-const data = {
-	'header': 'https://assets-global.website-files.com/61f27d3474c2ef62975a0106/61f27d3474c2ef78475a0118_Booker%20logo.svg',
-  'color': '#2356AA',
-	'navigation': [{
+let data = {
+	'pages': [
+		{
+			'uri': 'login',
+			'content': [
+				{
+					'heading': 'Administration Login',
+				}
+			]
+		},
+		{
+			'uri': 'validation',
+			'content': [
+				{
+					'heading': 'Administration Login',
+					'alert': {
+						'type': 'danger',
+						'msg': 'Invalid User ID / Password combination, please try again'
+					}
+				}
+			]
+		},
+		{
+			'uri': 'verification',
+			'content': [
+				{
+					'heading': 'Login Verification',
+					'paragraph': `We have sent you a verification code to your registered mobile number, please enter your 8-digit code in the box below to continue your login. 
+        
+					Didn\'t receive a SMS?`,
+					'alert1': {
+						'type': 'success',
+						'msg': 'New login code has been sent via SMS'
+					}, 
+					'alert2': {
+						'type': 'info',
+						'msg': 'You will be able to request another code in 30 seconds'
+					}
+				}
+			]
+		},
+		{
+			'uri': 'forgottenpassword',
+			'content': [
+				{
+					'heading': 'Forgotten Password',
+				}
+			]
+		},
+		{
+			'uri': 'home',
+			'content': [{
+				
+				'navigation': [{
 		'id': 'clickAndCollect',
 		'name': 'Click and Collect',
 		'icon': 'computer-mouse',
@@ -336,5 +386,9 @@ const data = {
 							}
 						]
 				}]
+			}]
+		}
+	],
 }
+
   

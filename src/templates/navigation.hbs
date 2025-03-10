@@ -1,0 +1,128 @@
+ <button data-drawer-target="navigation-sidebar" data-drawer-toggle="navigation-sidebar" aria-controls="navigation-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+      <span class="sr-only">Open sidebar</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+      </svg>
+    </button>
+    
+    <aside id="navigation-sidebar" class="fixed top-0 left-0 z-40 w-64 h-dvh transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar" aria-hidden="true">
+      <div class="p-6 bg-gray-50">
+         <bkr-header></bkr-header>
+      </div>
+
+
+      <div class="h-dvh px-3 py-4 overflow-y-auto bg-gray-50">
+        <ul class="space-y-2 font-medium">
+          <div id="navigation-sidebar-container">
+           
+          </div>
+        </ul>
+      </div>
+    </aside>
+    <div class="p-4 sm:ml-64 tw:bg-secondary-1000">
+      <div class="flex pb-3 w-full gap-4">
+        <div class="w-7/8">
+        <form>   
+          <label for="admin-portal-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg class="w-4 h-4 text-gray-500 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+              </svg>
+            </div>
+            <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:border-booker-500" placeholder="Search" required />
+        </div>
+      </form>
+      </div>
+      <div class="flex items-center gap-x-2">
+        <span class="block px-4 w-12 h-12 rounded-full bg-black-1000 text-white font-bold flex justify-center items-center">AP</span>
+        <span class="font-bold hidden lg:block">Anj Patel</span>
+        <div
+        class="relative"
+        data-twe-dropdown-ref
+        data-twe-dropdown-alignment="end">
+
+        <a
+          class="flex items-center whitespace-nowrap transition duration-150 ease-in-out motion-reduce:transition-none"
+          href="#"
+          id="dropdownMenuButton2"
+          role="button"
+          data-twe-dropdown-toggle-ref
+          aria-expanded="false">
+
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <ul
+          class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg data-[twe-dropdown-show]:block"
+          aria-labelledby="dropdownMenuButton2"
+          data-twe-dropdown-menu-ref>
+
+          <li>
+            <a
+              class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline "
+              href="/profile"
+              data-twe-dropdown-item-ref
+              >Your profile</a
+            >
+          </li>
+          <li>
+            <a
+              class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline"
+              href="/signout" data-twe-dropdown-item-ref
+              >Sign out</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+      
+      </div>
+      <div class="p-4 h-screen border-2 border-gray-200 border-dashed rounded-lg">
+        <div class="flex flex-wrap justify-center bg-gray-100 text-center">
+          <div class="p-4 w-60">
+            <div class="flex rounded-lg bg-white p-8 flex-col h-full gap-y-1">
+              <i class="fa-solid fa-star"></i>
+              <a href="#">
+                  <p class="font-semibold tracking-tight text-gray-500">Telesales</p>
+              </a>
+            </div>
+          </div>
+    
+          <div class="p-4 w-60">
+            <div class="flex rounded-lg bg-white p-8 flex-col h-full gap-y-1">
+              <i class="fa-solid fa-star"></i>
+              <a href="#">
+                <p class="font-semibold tracking-tight text-gray-500">Portal User Management</p>
+              </a>
+            </div>
+          </div>
+    
+          <div class="p-4 w-60">
+            <div class="flex rounded-lg bg-white p-8 flex-col h-full gap-y-1">
+              <i class="fa-solid fa-star"></i>
+              <a href="#">
+                <p class="font-semibold tracking-tight text-gray-500">My Allocations</p>
+              </a>
+            </div>
+          </div>
+       
+          <div class="p-4 w-60">
+            <div class="flex rounded-lg bg-white p-8 flex-col h-full gap-y-1">
+              <i class="fa-solid fa-star"></i>
+              <a href="#">
+                <p class="font-semibold tracking-tight text-gray-500">Create Digital Vouchers</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+    <script>
+      let navigationSidebarContainer = document.querySelector('#navigation-sidebar-container');
+      
+      let navigationData = [...data.pages].filter(data => data.uri === 'home')[0].content[0];
+      navigationSidebarContainer.innerHTML = [...navigationData.navigation].map(nav => 
+        `<bkr-nav-item-parent id="${nav.id}" icon="${nav.icon}" name="${nav.name}"></bkr-nav-item-parent>`).join(''); 
+    </script>

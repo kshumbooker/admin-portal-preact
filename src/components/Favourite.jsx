@@ -1,10 +1,14 @@
 import { h } from 'preact';
 
 export const Favourite = (props) => {
-  return <div class="flex rounded-lg bg-white p-8 flex-col h-full gap-y-1">
+  return <div class="tw:p-4 tw:w-60 h-full flex-1">
+  <div class="tw:flex tw:rounded-lg tw:bg-white tw:p-8 tw:flex-col tw:h-full tw:gap-y-1">
     <i class="fa-solid fa-star"></i>
     <a href={props.href}>
-      <p class="font-semibold tracking-tight text-gray-500">{props.category}</p>
+      <p class="tw:font-semibold tw:tracking-tight tw:text-gray-500">{props.function}</p>
     </a>
   </div>
+</div>
 }
+
+export default Favourite;

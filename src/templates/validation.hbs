@@ -1,0 +1,20 @@
+<bkr-heading text="{{heading}}"></bkr-heading>
+      <bkr-alert type="{{ alert.type }}" msg="{{ alert.msg }}"></bkr-alert>
+      <div class="tw:flex tw:w-full tw:h-full tw:justify-center">
+        <div class="tw:rounded-2xl tw:bg-secondary-1200 tw:p-8 tw:w-md">
+          <form action="/admin/portal/login" method="post" autocomplete="disable-autocomplete" class="tw:space-y-4 tw:my-5">
+            <bkr-input label="User ID" for="Username" dataVal="true" maxlength="100" type="text" id="Username" name="Username" dataValLength="The field Username must be a string with a maximum length of 100." dataValLengthMax="100"></bkr-input>
+            
+            <bkr-input label="Password" for="Password" dataVal="true" maxlength="100" type="password" id="Password" name="Password" dataValLength="The field Password must be a string with a maximum length of 50." dataValLengthMax="50"></bkr-input>
+            
+            <div class="g-recaptcha tw:my-4"
+              data-sitekey="6LfwwIQqAAAAANcF-qB9oAxVzaVwIum45H588zwK"
+              data-callback="onSubmit"
+              data-badge="inline"
+              data-size="invisible">
+            </div>
+          
+            <bkr-button type="submit" text="Sign In" classes="tw:w-full tw:bg-black-1000 tw:text-white-1000 tw:hover:bg-tertiary-500 tw:hover:text-black-1000"></bkr-button>
+          </form>
+        </div>
+      </div>      

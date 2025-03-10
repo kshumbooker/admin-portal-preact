@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import { Header } from './Header';
 import { Navigation } from './Navigation';
-import { data } from '../utils/data.js';
+import { data } from '../util/data.js';
  
 export const LoggedInMaster = (children) => {
   return (
