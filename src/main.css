@@ -164,6 +164,13 @@
   .account-name {
     width: max-content;
   }
+
+  #portalUserDropdown {
+    position: absolute; 
+    inset: 0px auto auto 0px; 
+    margin: 0px; 
+    transform: translate3d(592.8px, 62.4px, 0px);
+  }
 }
 
   

@@ -48,6 +48,20 @@ let data = {
 			]
 		},
 		{
+		'uri': 'passwordrecovery',
+			'content': [
+				{
+					'heading': 'Forgotten Password',
+					'paragraph': 'If the user ID you have entered is valid and the account is active then a reset link will have been sent to you.',
+					'button': {
+						'type': 'link',
+						'text': 'Continue',
+						'href': '/admin/portal/login'
+					}
+				}
+			]
+		},
+		{
 			'uri': 'home',
 			'content': [{
 				

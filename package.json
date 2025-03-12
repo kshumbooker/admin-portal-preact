@@ -5,6 +5,8 @@
   "homepage": "https://kshumbooker.github.io/admin-portal-preact",
   "scripts": {
     "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o ./docs",
     "build:css": "npx @tailwindcss/cli -i ./src/main.css -o ./dist/main.css",

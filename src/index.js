@@ -1,4 +1,5 @@
 import { h, render } from 'preact';
+import 'flowbite';
 import register from 'preact-custom-element';
 import Handlebars from 'handlebars';
 
