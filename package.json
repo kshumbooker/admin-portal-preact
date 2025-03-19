@@ -18,6 +18,8 @@
   "description": "",
   "dependencies": {
     "esbuild": "^0.24.2",
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
     "handlebars": "^4.7.8",
     "js-beautify": "^1.15.2",
     "preact": "^10.25.4",
@@ -31,6 +33,7 @@
     "@babel/preset-env": "^7.26.8",
     "@babel/preset-react": "^7.26.3",
     "@chromatic-com/storybook": "^3.2.5",
+    "@faker-js/faker": "^9.6.0",
     "@storybook/addon-essentials": "^8.6.0",
     "@storybook/addon-interactions": "^8.6.0",
     "@storybook/addon-mdx-gfm": "^8.6.2",
